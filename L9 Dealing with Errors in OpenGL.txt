@@ -1,0 +1,16 @@
+Dealing with Errors in OpenGL
+
+Whenever an error occurs in OpenGL, a flag is setoff in memory that says what error occurred. 
+
+GLGetError will check OpenGL to see if there are any flag errors. 
+
+We are going place GLGetError whenever we call a OpenGL function. There is going to be loop to clear all remaining errors before new OpenGl function call. 
+
+Note: glDebugMessageCallback (later versions of OpenGL) will be discussed in a later lecture.  
+
+...
+
+
+Having to call GLClearError and GLCheckError after every OpenGL function is going to get old really quickly. We are going to add more functionality to it as well, such as which line the error occurred. 
+
+To break the code midway through the run: use assert.

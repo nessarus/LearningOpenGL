@@ -1,0 +1,42 @@
+Textures in OpenGL
+
+Textures are images are on the surface of the objects in a game. It also has other advanced graphical functionality. We will discover that at a latter point.
+We are going to be using a png picture and upload it to the GPU.
+
+Blending in OpenGL
+Most images have layers. Sometimes certain layers are transparent. The process of combining the layers together is called Blending.
+
+Controlling Blending
+- Enabling blending: glEnable(GL_BLEND)/glDisable(GL_BLEND)
+
+- glBlendFunc(src, dest):
+    src: the multiplier for the color of the pixel in the buffer (default: 1)
+    dest: the multiplier for the color of the old pixel in the same position (default: 0)
+
+- glBlendEquation(mode)
+    mode: setting for how the src and destination are combined
+        GL_FUNC_ADD, GL_FUNC_SUBTRACT, GL_FUNC_REVERSE_SUBTRACT, GL_MIN, GL_MAX. 
+        default: GL_FUNC_ADD
+            i.e. src + dest = 1 + 0 = 1 (src is 100% opaque meaning dest cannot be seen)
+
+Our example:
+    src = GL_SRC_ALPHA
+    dest = GL_ONE_MINUS_SRC_ALPHA
+    src_alpha = 0
+
+    //src is the source_color multiplier
+    src = src_alpha
+        = 0
+
+    //dest is the destination_color multiplier
+    dest = 1 - src_alpha
+         = 1 - 0 
+         = 1
+    
+    mode = GL_FUNC_ADD (source plus destination)
+        Basically: color = source_color * multiplier + destination_color * multiplier
+    
+    R = (r_src * 0) + (r_dest * 1)
+    G = (g_src * 0) + (g_dest * 1)
+    B = (b_src * 0) + (b_dest * 1)
+    A = (a_src * 0) + (a_dest * 1)

@@ -1,0 +1,14 @@
+Vertex Attributes and Layouts in OpenGL
+
+Since last lecture we were missing parts to get our triangle working.
+    Vertex Shaders
+    Vertex Attributes
+
+The OpenGL pipeline works by:
+    Providing data to GPU
+    Store content on the memory of the GPU (Vertex Buffer)
+    Shaders programs are run on the GPU to instruct the GPU what to draw
+
+When a shader reads a vertex buffer it need to know the layout of the buffer (Vertex Attributes).
+
+We are going to be looking at glVertexAttribPointer.

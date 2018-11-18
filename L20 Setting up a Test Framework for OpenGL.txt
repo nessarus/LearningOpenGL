@@ -1,0 +1,19 @@
+Setting up a Test Framework for OpenGL
+
+We are creating an application to create a scene. This application will have menu to load scenes, objects and animations.
+First we should clean up entire code base.
+
+
+1. Create a folder called tests in src.
+2. Create Test.h, TestClearColor.cpp, TestClearColor.h
+
+Homework:
+
+Create a menu selecting tests
+    click on test -> creates it and opens it 
+    if you go back from that menu -> it should delete that instance of that class
+    make more than one test
+        textures
+        quad with more than one texture color
+        quad with a uniform that you can customize
+

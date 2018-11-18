@@ -1,0 +1,11 @@
+Projection Matrices in OpenGL
+
+Projection are how we go from an arbitrary coordinate system to our window in our 3D space. Our 3D world has to be projected onto our 2D window.
+
+We convert our coordinate matrix into normalized device coordinate. Left side is -1, right side is 1, bottom of the screen is -1 and the top is 1.
+
+Model View Projection Matrices in OpenGL
+
+Model view projection matrices are used to transform whatever space we're dealing with to coordinate system.
+
+Translation, rotation, scale.

@@ -1,0 +1,13 @@
+Shader Abstraction in OpenGL
+
+Shaders abstraction are incredibility complex topic. There a tendency to make a complicated system that is easy to use and powerful. It is common to have a custom shading language which compiles into shader code for each platform and is controllable at run time. This means games can create new shader in game and use for rendering.
+
+We are not doing any of that for simplicity of just learning OpenGL.
+
+What does a shader need?
+- We need to handle the shader string. 
+    -> importing
+    -> compiling
+    -> error management
+- We need to bind and unbind the shader
+- Setting the uniform variables. 

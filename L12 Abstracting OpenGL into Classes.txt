@@ -1,0 +1,13 @@
+Abstracting OpenGL into Classes
+
+Abstraction is all about moving common code into classes for later use.
+
+Classes:
+    Vertex buffer 
+    vertex index buffer 
+    vertex array (vertex attributes included)
+    Shaders 
+
+
+Renderer: give command and it will do it.
+

@@ -1,0 +1,21 @@
+Vertex Buffers and Drawing a Triangle in OpenGL
+
+Drawing a triangle in modern OpenGL:
+    Creating a vertex buffer
+    Creating a vertex shader
+
+    Vertex Buffer:
+        Vertex means array (C++ made a mistake in naming convention), buffer is just memory storage
+        Vertex buffer is an OpenGL buffer so the memory is stored in GPU -> Video RAM (VRAM).
+
+    We need to tell the GPU how to read the elements in the Vertex Buffer and draw it on the screen.
+
+    Vertex Shader:
+        Vertex Shaders are programs we write to run on the GPU. 
+
+
+OpenGL drawing modes:
+    OpenGL operates as a State Machine. We tell it which program to run (shader) and what input it has
+    (buffer). Then it executes a draw triangle command. 
+
+    The shader and buffer will adjust where the location and properties of that triangle.

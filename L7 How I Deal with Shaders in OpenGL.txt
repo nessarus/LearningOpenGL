@@ -1,0 +1,19 @@
+How I Deal with Shaders in OpenGL
+
+Shaders are not really supposed to be taken in with a string. 
+We will need a way to take them in as a file. 
+
+OpenGL encourages placing vertex and fragment shaders in separate files. This however is not necessary. We can write it all in one file (the Direct X way).
+
+1. Under Solution -> ProjectName
+    create a new folders:
+        .. -> res -> shaders
+2. Create a Basic.shader file 
+3. Copy the shader strings into Basic.shader
+
+
+Debugging file directory
+To check the directory the shader files searched for in:
+1. Right-click project -> properties
+
+2. Under Debugging -> Working Directory

@@ -1,0 +1,13 @@
+Using Modern OpenGL in C++
+
+So far we have used OpenGL libraries to create a basic triangle shape. In order to get more advanced and updated functions, we must import GLEW.
+
+Those functions already implemented in your GPU drivers. GLEW will reference those functions into OpenGL cross platform.
+
+Download GLEW from:
+https://sourceforge.net/projects/glew/
+
+Copy and import the lib and include files into the project.
+
+Check the doc folder for the documentation to each of the libraries.
+

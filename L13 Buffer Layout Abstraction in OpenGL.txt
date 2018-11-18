@@ -1,0 +1,3 @@
+Buffer Layout Abstraction in OpenGL
+
+The Vertex array needs to tie a vertex buffer with a layout. 

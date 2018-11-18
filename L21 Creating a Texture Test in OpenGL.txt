@@ -1,0 +1,3 @@
+Creating a Texture Test in OpenGL
+
+We are going to create a texture test in our test framework.

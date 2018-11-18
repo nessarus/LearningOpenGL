@@ -1,0 +1,4 @@
+Before we discuss Index Buffers, lets discuss a simple problem:
+
+Let's draw a square. A square can be drawn by drawing two triangles. Since the corners of the triangle can share the same corners we only need four vertices.
+

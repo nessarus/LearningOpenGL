@@ -1,0 +1,11 @@
+Uniform variables in OpenGL
+
+Previously, we have looked at vertex attributes which also allows transfer of data. Vertex attributes are set per vertex. Every new vertex has a new attribute. Uniform variables very much behave in the same way. 
+
+Uniforms variables allow data transfer from the CPU to the GPU. Uniforms are set per draw. 
+
+So before glDrawElements, a uniform can be created and used. 
+
+See the Basic.shader
+
+Note: You must have a shader buffer bound (selected) before sending any data to it. 

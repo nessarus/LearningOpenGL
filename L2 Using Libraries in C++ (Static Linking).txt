@@ -1,0 +1,47 @@
+External dependencies are a pain to manage in C++.
+We are going to keep copies of the dependencies in the project so anyone can run the code as is.
+
+Most serious projects will build all dependencies.
+
+Quick project will link against binaries. We started looking at libraries in SetupAndCreateWindow.txt.
+
+This lecture will give more detail on what libraries are.
+
+Libraries contain two parts:
+    includes: header files
+    lib (directories): pre-compiled binaries
+        static: will be put into exe file (bigger but faster)
+        dynamic: will be linked at run-time 
+    
+    Dynamic Libraries:
+        glfw3.dll: runtime link library for dynamic linking at run time
+        glfw3dll.lib: the static library used with glfw3.dll to assign the library's function locations.
+
+    Static library:
+        glfw3.lib: static library
+
+
+See UsingLibraries.cpp
+
+Setting up project:
+	Create new project
+	Setup output directories: 
+		output directory: $(SolutionDir)bin\$(Platform)\$(Configuration)\
+		intermediate directory: $(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\
+	Show all files -> Create new folder -> src
+	Create new file: Application.cpp
+
+Setting up dependencies:
+	Open file explorer and create a new folder: Dependencies -> GLFW
+	Paste in include and lib-vc2015 from the 32-bit Windows binaries folder
+        You can see which Visual Studio version they used to compile the libraries
+
+Linking:
+	In project properties:
+		Copy include address path and put in C/C++ -> General -> Additional Include Directories (links include folder)
+            $(SolutionDir)Dependencies\GLFW\include
+            Now you can include #include "GLFW/glfw3.h" as a header in your files. 
+            i.e. Dependencies\GLFW\include\GLFW\glfw3.h
+		copy lib-vc2015 address path and put in Linker -> General -> Additional Library Directories (links library folder)
+
+		then under Linker -> Input -> Additional Dependencies -> glfw3.lib (adds library)

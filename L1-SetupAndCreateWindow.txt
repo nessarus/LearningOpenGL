@@ -1,0 +1,45 @@
+Setting up OpenGL and Creating a Window in C++
+
+We are going to use a generic windowing library as it is cross platform (Normally you would make a window platform specific for optimal performance).
+
+We are going use glfw library.
+
+Check the download and documentation at:
+www.glfw.org
+
+We are going to be using the Microsoft Windows pre-compiled binaries to save time (i.e. not building it ourselves and linking it)
+32-bit Windows binaries
+
+Setting up project:
+	Create new project
+	Set project properties: 
+		output directory: $(SolutionDir)bin\$(Platform)\$(Configuration)\
+		intermediate directory: $(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\
+	Show all files -> Create new folder -> src
+	Create new file: Application.cpp
+	Copy and paste example code from glfw.org
+	Open file explorer and create a new folder: Dependencies -> GLFW
+	Paste in include and lib-vc2015 from the 32-bit Windows binaries folder
+
+Linking:
+	In project properties:
+		copy include address path and put in C/C++ -> General -> Additional Include Directories (links include folder)
+		copy lib-vc2015 address path and put in Linker -> General -> Additional Library Directories (links library folder)
+		then under Linker -> Input -> Additional Dependencies -> glfw3.lib (adds library)
+
+Building Project:
+	Right click -> build project
+
+Debugging:
+	If you get any build errors try to link the libraries needed:
+		In the build output, copy the error message -> unresolved external symbol ->
+		glClear, RegisterDeviceNotificationW, ... etc
+		Search google for microsoft docs glClear, etc...
+		find the library i.e. opengl32.lib, User32.dll... etc
+		link it in the Linker -> Input -> Additional Dependencies -> glfw3.lib;opengl32.lib ...
+
+Creating a triangle and testing:
+	Check if OpengGL is up and running by running the project
+	We will now program under /* Render here */ and under glClear
+	Let's program an example using legacy OpenGL for simplicity
+

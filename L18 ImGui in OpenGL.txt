@@ -1,0 +1,6 @@
+ImGui in OpenGL
+
+ImGui a library to draw UI. Download ImGui by going to: 
+
+https://github.com/ocornut/imgui
+

@@ -1,0 +1,6 @@
+Writing a Basic Renderer in OpenGL
+
+Today we are writing a renderer. What we have at the moment are a bunch of classes that get created, bound and drawn. This is rather inconvenient because none of this is going through a central pipeline. We still have to write code to move vertex's from start to finish every time. 
+
+The renderer is like the OpenGl factory.
+

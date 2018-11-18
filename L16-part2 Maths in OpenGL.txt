@@ -1,0 +1,19 @@
+Maths in OpenGL
+
+Matrices and Vectors are used mostly for transformations.
+
+We are going to be using a maths library:
+
+https://github.com/g-truc/glm
+
+glm is a library written specifically for OpenGL. 
+
+Download and open the glm zip file and copy the glm folder (inside the zip file) to src\vendor.
+
+Right click project and open properties.
+
+Under C/C++ general, add "src\vendor;"  to "Additional Include Directories".
+
+We ant to also include the src\vendor folder into the project so:
+    Right click and click  Include In Project
+    

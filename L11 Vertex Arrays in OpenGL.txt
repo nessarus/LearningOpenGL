@@ -1,0 +1,10 @@
+Vertex Arrays in OpenGL
+
+We have covered vertex buffers however vertex array are slightly different. 
+
+Vertex arrays are a way to customize the vertex buffers layout. 
+
+Note: Vertex arrays do not exist in DirectX. They are unique to OpenGL. 
+
+So that means we are finding a way to adjust glVertexAttribPointer using a vertex array. This will help managed buffer binding.
+

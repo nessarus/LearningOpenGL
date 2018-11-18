@@ -1,0 +1,25 @@
+How Shaders Work in OpenGL
+
+Shaders program run on the GPU. Graphics programming is important to use the 
+GPU to draw graphics. Please note not all programming will be done on the GPU, CPU
+is also important.
+
+We need to specify the position, color, lighting, etc...
+
+Shader types: Vertex Shaders, Fragment Shaders. 
+ - note: there are more than these two types of shaders but they are rarely 
+    used and more advanced
+
+Graphics pipeline (many states skipped):
+    1. Draw Call
+    2. Vertex Shader called
+    3. Fragment Shader called
+    4. See Result on screen
+
+Vertex Shader is called for each vertex. The primary purpose of the vertex shader is 
+to specify the location of the vertex to be. Secondary purpose is to pass attributes into
+the next stage. Transformation here as well.
+
+Fragment Shader is roughly equivalent to pixels. Fragment Shader decides what colour 
+each pixel is. 
+
