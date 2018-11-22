@@ -15,7 +15,7 @@
 
 /* Lecture: Writing a Basic Renderer in OpenGL */
 
-int main15(void)
+int main(void)
 {
 	GLFWwindow* window;
 

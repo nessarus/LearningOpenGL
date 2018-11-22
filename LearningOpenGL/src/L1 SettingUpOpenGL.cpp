@@ -2,7 +2,7 @@
 
 /* Lecture: Setting up OpenGL and Creating a Window in C++ */
 
-int main1(void)
+int main(void)
 {
 	GLFWwindow* window;
 

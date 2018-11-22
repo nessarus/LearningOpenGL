@@ -22,7 +22,7 @@
 
 /* Lecture: ImGui in OpenGL */
 
-int main18(void)
+int main(void)
 {
 	GLFWwindow* window;
 

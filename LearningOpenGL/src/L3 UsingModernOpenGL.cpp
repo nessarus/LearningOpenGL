@@ -4,7 +4,7 @@
 
 /* Lecture: Using Modern OpenGL in C++ */
 
-int main3(void)
+int main(void)
 {
 	GLFWwindow* window;
 

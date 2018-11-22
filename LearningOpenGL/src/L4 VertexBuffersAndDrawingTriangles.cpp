@@ -4,7 +4,7 @@
 
 /* Lecture: Vertex Buffers and Drawing a Triangle in OpenGL */
 
-int main4(void)
+int main(void)
 {
 	GLFWwindow* window;
 

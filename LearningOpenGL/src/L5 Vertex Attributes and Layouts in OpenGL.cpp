@@ -4,7 +4,7 @@
 
 /* Lecture: Vertex Attributes and Layouts in OpenGL */
 
-int main5(void)
+int main(void)
 {
 	GLFWwindow* window;
 

@@ -20,7 +20,7 @@
 
 /* Lecture: Model View Projection Matrices in OpenGL */
 
-int main17(void)
+int main(void)
 {
 	GLFWwindow* window;
 

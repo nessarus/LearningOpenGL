@@ -20,7 +20,7 @@
 
 /* Lecture: Maths in OpenGL */
 
-int main16(void)
+int main(void)
 {
 	GLFWwindow* window;
 
